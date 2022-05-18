@@ -1428,13 +1428,6 @@ p.counter-right-text {
 
 
 
-
-
-
-
-
-
-
 /*---------------------------------------------------------------------------- 
   Shop Page Section Start
  ----------------------------------------------------------------------------*/
@@ -2082,7 +2075,7 @@ input:focus-visible {
 }
 
 .form-control {
-  padding: 30px 20px;
+  padding: 25px 20px;
   border-radius: 0;
 }
 
@@ -2261,6 +2254,201 @@ input:focus-visible {
  ----------------------------------------------------------------------------*/
 
 
+
+/*---------------------------------------------------------------------------- 
+  Blog Details Section Start
+ ----------------------------------------------------------------------------*/
+.blog-description .blog-published {
+  justify-content: left;
+}
+
+.blog-description .home-blog-content {
+  text-align: left;
+}
+
+.blog-desc-quoted-box {
+  padding: 30px;
+  background: #F8F8F8;
+  display: flex;
+}
+
+.bdq-quote-img {
+  width: 90px;
+}
+
+.bdq-left {
+  margin-right: 30px;
+}
+
+.bdq-text {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.bdq-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.blog-description .home-blog-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: unset;
+}
+
+/* Blog Share Start */
+.blog-share {
+  display: flex;
+  align-items: baseline;
+}
+
+.blog-share h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000;
+  margin-right: 15px;
+}
+
+.share-collection {
+  display: flex;
+}
+
+.share-collection li {
+  margin-right: 20px;
+}
+
+.share-collection li:last-child {
+  margin-right: 0;
+}
+
+.share-collection li a {
+  border: 0;
+  color: #4d4d4d;
+  width: auto;
+  height: auto;
+  line-height: auto;
+  font-size: 14px;
+}
+
+/* Blog Share End */
+
+/*---------------------------------------------------------------------------- 
+  Blog Details Section End
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+     29.0 Comment Section CSS Start
+ ----------------------------------------------------------------------------*/
+.comment-box {
+  width: 85%;
+}
+
+.writter-img-box {
+  margin-right: 20px;
+}
+
+.comment-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.comment-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.writter-bio h6 {
+  font-size: 20px;
+  color: #222;
+}
+
+.comment-box p {
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+}
+
+.writter-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.comment-box h6 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 800;
+}
+
+.comment-box .read-more-btn {
+  text-transform: capitalize;
+  line-height: 32px;
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.bd-title p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/*---------------------------------------------------------------------------- 
+    Comment Section CSS End
+ ----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+  Post Comment Section Start
+ ----------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- 
+  Post Comment Section End
+ ----------------------------------------------------------------------------*/
+.post-comment {
+  padding: 50px 40px;
+  background: #f8f8f8;
+}
+
+.pc-title {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.pc-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.check-pad {
+  padding-left: 36px;
+}
 
 /*---------------------------------------------------------------------------- 
   Hero Section Start
