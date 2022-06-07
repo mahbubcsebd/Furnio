@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="assets/css/aos.css">
   <!-- IntroLoader -->
   <link rel="stylesheet" href="assets/css/introLoader.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.css">
 
   <!-- CSS  -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -128,6 +129,8 @@
     <div class="overlay"></div>
   </div>
   <!-- Top Banner Section End -->
+
+  <input id="demo_vertical2" type="text" value="" name="demo_vertical2">
 
   <!-- Error Section Start -->
   <div id="page-error" class="sp-80">
@@ -256,8 +259,16 @@
   <script src="assets/js/counterup.min.js"></script>
   <!-- IntroLoader -->
   <script src="assets/js/jquery.introLoader.min.js"></script>
+  <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
   <!-- Main Script -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $("input[name='demo_vertical2']").TouchSpin({
+      verticalbuttons: true,
+      verticalupclass: 'glyphicon glyphicon-plus',
+      verticaldownclass: 'glyphicon glyphicon-minus'
+    });
+</script>
 </body>
 
 </html>

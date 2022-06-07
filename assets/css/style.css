@@ -9,7 +9,6 @@
 
 ----------------------------------------------------------------------------- */
 
-
 /* 
 *  CSS TABLE OF GLOBAL CONTENTS
 1.0 - Variables Start
@@ -42,23 +41,20 @@
 28.0 - Contact Us Form Section Start
 */
 
-
-
-
 /*---------------------------------------------------------------------------- 
     1.0 - Variables Start
  ----------------------------------------------------------------------------*/
 :root {
   --primaryColor: hsl(175, 84%, 23%);
-  --secondaryColor: #FD8B5F;
+  --secondaryColor: #fd8b5f;
   --textColor: #2b2c34;
-  --textColorTwo: #4A4A4A;
+  --textColorTwo: #4a4a4a;
 
   /* Alerts */
-  --successColor: #37C675;
-  --LinkColor: #3EAEFF;
-  --warningColor: #FF9700;
-  --errorColor: #FE5050;
+  --successColor: #37c675;
+  --LinkColor: #3eaeff;
+  --warningColor: #ff9700;
+  --errorColor: #fe5050;
 }
 
 /*---------------------------------------------------------------------------- 
@@ -82,15 +78,13 @@ body {
   min-height: 100%;
   background: #fff;
   color: #4d4d4d;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-
 
 body {
   font-size: 16px;
   text-rendering: optimizeLegibility;
 }
-
 
 body,
 ul,
@@ -119,9 +113,6 @@ video {
     Reset End
  ----------------------------------------------------------------------------*/
 
-
-
-
 /*---------------------------------------------------------------------------- 
     3.0 - Typography Start
  ----------------------------------------------------------------------------*/
@@ -131,7 +122,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   color: #1d1d1d;
   margin: 0;
   padding: 0;
@@ -157,7 +148,6 @@ h4 {
   line-height: 30px;
 }
 
-
 h5 {
   font-size: 22px;
   line-height: 22px;
@@ -167,7 +157,6 @@ h6 {
   font-size: 20px;
   line-height: 20px;
 }
-
 
 p {
   -ms-word-break: break-all;
@@ -182,14 +171,13 @@ p {
 }
 
 a {
-
   display: inline-block;
   text-decoration: none;
   color: #2d2d2d;
 }
 
 i {
-  font-family: 'Font Awesome 6 Free';
+  font-family: "Font Awesome 6 Free";
 }
 
 a:hover {
@@ -210,7 +198,7 @@ table {
 }
 
 td {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 img {
@@ -219,14 +207,14 @@ img {
 }
 
 .img-bg {
-  background-image: url('../img/img-bg.png');
+  background-image: url("../img/img-bg.png");
   background-size: fill;
   background-attachment: fixed;
   background-position: center;
 }
 
 .sbg {
-  background-color: #F9FAFC;
+  background-color: #FAFAFA;
 }
 
 input[type="submit"]::-moz-focus-inner,
@@ -246,8 +234,6 @@ sub,
 sup {
   line-height: 0;
 }
-
-
 
 /* Flex */
 .flex-all {
@@ -300,6 +286,7 @@ sup {
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .section-title-left {
@@ -314,9 +301,6 @@ sup {
 /*---------------------------------------------------------------------------- 
   Typography End
  ----------------------------------------------------------------------------*/
-
-
-
 
 /*---------------------------------------------------------------------------- 
     4.0 - Utility Start
@@ -336,10 +320,6 @@ sup {
 /*---------------------------------------------------------------------------- 
     Utility End
  ----------------------------------------------------------------------------*/
-
-
-
-
 
 /*---------------------------------------------------------------------------- 
   5.0 - Scroll To Top Start
@@ -374,7 +354,6 @@ sup {
 /*---------------------------------------------------------------------------- 
    Scroll To Top End
  ----------------------------------------------------------------------------*/
-
 
 /*---------------------------------------------------------------------------- 
     6.0 - Button Start
@@ -440,8 +419,6 @@ sup {
   background: var(--secondaryColor);
 }
 
-
-
 .btn-custom-white {
   border: 1px solid #fff;
   background: #fff;
@@ -495,18 +472,26 @@ sup {
   padding-bottom: 0px;
 }
 
+.section-top-span {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FD8B5F;
+  display: inherit;
+}
+
 /*---------------------------------------------------------------------------- 
     Section Top Title Start
  ----------------------------------------------------------------------------*/
-
-
-
 
 /*---------------------------------------------------------------------------- 
     7.0 - Navbar Start
  ----------------------------------------------------------------------------*/
 .header-area {
-  background: #FEFFD8;
+  background: #feffd8;
   position: absolute;
   top: 0;
   left: 0;
@@ -530,7 +515,6 @@ sup {
 .header-area .dropdown-menu {
   border-radius: 0;
 }
-
 
 .header-area li.nav-item {
   padding: 10px 20px;
@@ -618,7 +602,7 @@ sup {
   outline: none;
 }
 
-.navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(1) {
+.navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(1) {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -627,12 +611,12 @@ sup {
   transform-origin: 10% 10%;
 }
 
-.navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(2) {
+.navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(2) {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-.navbar-toggler.x[aria-expanded=true] .icon-bar:nth-of-type(3) {
+.navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(3) {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -680,7 +664,7 @@ sup {
 
 .navbar-brand:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 62px;
   width: 1px;
   top: -9px;
@@ -707,7 +691,7 @@ sup {
 
 .nav-icon-collection li:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 62px;
   width: 1px;
   top: -9px;
@@ -719,13 +703,12 @@ sup {
   Navbar End
  ----------------------------------------------------------------------------*/
 
-
 /*---------------------------------------------------------------------------- 
   Hero Section Start
  ----------------------------------------------------------------------------*/
 .hero-section {
   height: 100vh;
-  background: #FEFFD8;
+  background: #feffd8;
 }
 
 .hero-left,
@@ -745,7 +728,7 @@ sup {
   font-size: 60px;
   line-height: 75px;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 25px;
 }
@@ -755,7 +738,7 @@ sup {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 25px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   width: 320px;
 }
 
@@ -771,12 +754,6 @@ sup {
 /*---------------------------------------------------------------------------- 
   Hero Section Start
  ----------------------------------------------------------------------------*/
-
-
-
-
-
-
 
 /*---------------------------------------------------------------------------- 
   Counter Section Start
@@ -796,13 +773,13 @@ sup {
 
 .counter-sm-img {
   position: absolute;
-  content: '';
+  content: "";
   right: -65px;
   bottom: 5px;
 }
 
 .counter-num {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -811,7 +788,7 @@ sup {
 }
 
 .counter-title {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -836,9 +813,6 @@ p.counter-right-text {
 /*---------------------------------------------------------------------------- 
   Counter Section End
  ----------------------------------------------------------------------------*/
-
-
-
 
 /*---------------------------------------------------------------------------- 
   Latest Arival Section Start
@@ -927,7 +901,7 @@ p.counter-right-text {
 
 .sp-hover-box .sp-hover-collection li a:hover {
   background: #fff;
-  color: #FD8B5F;
+  color: #fd8b5f;
 }
 
 /* Single Product End */
@@ -946,10 +920,9 @@ p.counter-right-text {
 
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
-  background: #FD8B5F;
+  background: #fd8b5f;
   color: #fff;
 }
-
 
 .owl-nav {
   position: absolute;
@@ -967,14 +940,11 @@ p.counter-right-text {
   Latest Arival Section End
  ----------------------------------------------------------------------------*/
 
-
-
-
 /*---------------------------------------------------------------------------- 
   Testimonial Section Start
  ----------------------------------------------------------------------------*/
 .testimonial-area {
-  background: #F8F8F8;
+  background: #f8f8f8;
   padding: 100px;
 }
 
@@ -1011,7 +981,7 @@ p.counter-right-text {
 }
 
 .testimonial-name {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1020,7 +990,7 @@ p.counter-right-text {
 }
 
 .testimonial-position {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1039,16 +1009,58 @@ p.counter-right-text {
 }
 
 .owl-item:not(.active)+.owl-item.active {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 0.5px solid rgba(9, 106, 98, 0.15);
   box-shadow: 50px 30px 60px rgba(0, 0, 1, 0.06);
+}
+
+/* testimonial-2 */
+.testimonial-area-2 .single-testimonial {
+  padding: 20px;
+  background: transparent;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.testimonial-area-2 .testi-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-area-2 .testi-img-box {
+  margin-right: 50px;
+}
+
+.testimonial-area-2 .testimonial-text {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+.testimonial-area-2 .quote-img {
+  margin-bottom: 0;
+  width: 110px !important;
+}
+
+.testimonial-wrapper-2 .owl-nav {
+  position: absolute;
+  top: 250px;
+  right: 270px;
+}
+
+.testimonial-wrapper-2.owl-carousel .owl-nav button.owl-next,
+.testimonial-wrapper-2.owl-carousel .owl-nav button.owl-prev,
+.testimonial-wrapper-2.owl-carousel button.owl-dot {
+  color: var(--primaryColor) !important;
 }
 
 /*---------------------------------------------------------------------------- 
   Testimonial Section End
  ----------------------------------------------------------------------------*/
-
-
 
 /*---------------------------------------------------------------------------- 
   Home Blog Section Start
@@ -1060,7 +1072,7 @@ p.counter-right-text {
 }
 
 .blog-published p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1073,13 +1085,13 @@ p.counter-right-text {
 }
 
 .home-blog-title {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   margin-bottom: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1093,7 +1105,7 @@ p.counter-right-text {
 }
 
 .read-more-btn {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1103,7 +1115,7 @@ p.counter-right-text {
 }
 
 .read-more-btn:hover {
-  color: #096A62;
+  color: #096a62;
   text-decoration: underline;
 }
 
@@ -1124,13 +1136,9 @@ p.counter-right-text {
   transform: scale(1.2);
 }
 
-
-
 /*---------------------------------------------------------------------------- 
   Home Blog Section End
  ----------------------------------------------------------------------------*/
-
-
 
 /*---------------------------------------------------------------------------- 
   Discount Section Start
@@ -1138,7 +1146,7 @@ p.counter-right-text {
 .discount-area {
   width: 100%;
   height: 440px;
-  background: url('../img/discount-bg.jpg');
+  background: url("../img/discount-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -1159,22 +1167,20 @@ p.counter-right-text {
 
 .discount-title {
   max-width: 570px;
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 55px;
   line-height: 65px;
   text-align: center;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 /*---------------------------------------------------------------------------- 
   Discount Section End
  ----------------------------------------------------------------------------*/
-
-
 
 /*---------------------------------------------------------------------------- 
   Footor Section Start
@@ -1185,12 +1191,12 @@ p.counter-right-text {
 }
 
 .footer-left p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   margin-bottom: 20px;
 }
@@ -1229,8 +1235,8 @@ p.counter-right-text {
   font-size: 20px;
   line-height: 25px;
   text-transform: capitalize;
-  color: #FFFFFF;
-  font-family: 'Darker Grotesque';
+  color: #ffffff;
+  font-family: "Darker Grotesque";
   margin-bottom: 35px;
 }
 
@@ -1239,7 +1245,7 @@ p.counter-right-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   transition: 0.3s;
 }
@@ -1253,12 +1259,12 @@ p.counter-right-text {
 }
 
 .footer-right-content p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   margin-bottom: 10px;
 }
@@ -1302,13 +1308,13 @@ p.counter-right-text {
 }
 
 .footer-bottom-left p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .row.footer-bottom-area {
@@ -1330,14 +1336,14 @@ p.counter-right-text {
 }
 
 .footer-bottom-right p {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 20px;
 }
 
@@ -1352,7 +1358,6 @@ p.counter-right-text {
 /*---------------------------------------------------------------------------- 
   Footor Section End
  ----------------------------------------------------------------------------*/
-
 
 /*---------------------------------------------------------------------------- 
    24.0 - Banner Section Start
@@ -1376,14 +1381,14 @@ p.counter-right-text {
 }
 
 .banner-title h2 {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-title .breadcrumb {
@@ -1392,13 +1397,13 @@ p.counter-right-text {
 }
 
 .banner-title .breadcrumb-item a {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-title {
@@ -1408,13 +1413,13 @@ p.counter-right-text {
 }
 
 .banner-title .breadcrumb-item.active {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-title .breadcrumb-item+.breadcrumb-item::before {
@@ -1425,9 +1430,6 @@ p.counter-right-text {
    Banner Section End
  ----------------------------------------------------------------------------*/
 
-
-
-
 /*---------------------------------------------------------------------------- 
   Shop Page Section Start
  ----------------------------------------------------------------------------*/
@@ -1436,13 +1438,13 @@ p.counter-right-text {
 }
 
 .sidebar-title {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   margin-bottom: 15px;
 }
 
@@ -1454,7 +1456,7 @@ p.counter-right-text {
 }
 
 .sidebar-cat-collecection li p {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1487,14 +1489,14 @@ p.counter-right-text {
 }
 
 .filter-text p {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #2d2d2d;
   padding: 10px;
   border-radius: 20px;
@@ -1607,19 +1609,19 @@ p.counter-right-text {
 }
 
 .color-collection li:first-child a {
-  background: #B18D6B;
+  background: #b18d6b;
 }
 
 .color-collection li:nth-child(2) a {
-  background: #509DA8;
+  background: #509da8;
 }
 
 .color-collection li:nth-child(3) a {
-  background: #7852B7;
+  background: #7852b7;
 }
 
 .color-collection li:nth-child(4) a {
-  background: #BA9A47;
+  background: #ba9a47;
 }
 
 .color-collection li:nth-child(5) a {
@@ -1659,7 +1661,6 @@ p.counter-right-text {
   margin: 0 15px 10px 0;
 }
 
-
 /* Instagram */
 .instagram-collection {
   display: flex;
@@ -1677,14 +1678,13 @@ p.counter-right-text {
   overflow: hidden;
 }
 
-
 .instagram-collection li img {
   width: 100%;
 }
 
 .insta-hover {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: -100%;
   width: 100%;
@@ -1705,7 +1705,6 @@ p.counter-right-text {
 .insta-btn:hover {
   color: var(--secondaryColor);
 }
-
 
 .instagram-collection li:hover .insta-hover {
   left: 0;
@@ -1739,12 +1738,117 @@ input:focus-visible {
   color: #2d2d2d;
 }
 
-
-
 /*---------------------------------------------------------------------------- 
   Shop Page Section End
  ----------------------------------------------------------------------------*/
 
+/*---------------------------------------------------------------------------- 
+  Elivate Zoom Section CSS Start
+ ----------------------------------------------------------------------------*/
+.shop-inner-product-section .slick-slide img {
+  display: block;
+  height: 150px;
+  width: 98%;
+}
+
+.shop-inner-product-section .elivate-lg-img {
+  height: 500px;
+}
+
+.shop-inner-product-section .zoomWindow {
+  height: 500px;
+}
+
+.cv-item,
+.cv-item.active {
+  height: 150px !important;
+}
+
+.cv-carousel {
+  height: 500px !important;
+  overflow: hidden;
+}
+
+/* Product Description Section Start */
+.product-ratings {
+  display: flex;
+  align-items: center;
+}
+
+.shop-inner-title {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+h4.price {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 7px;
+}
+
+.ratings-collection {
+  margin-right: 15px;
+}
+
+.ratings-collection li {
+  margin-right: 5px;
+}
+
+.ratings-collection li p {
+  color: var(--secondaryColor);
+}
+
+.ratings-collection li:last-child p {
+  color: #4a4a4a;
+}
+
+.prod-color-box {
+  display: flex;
+  align-items: center;
+}
+
+.clear-btn.btn {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+.shop-inner-quantity-box {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-wrapper {
+  margin-right: 90px;
+}
+
+.quantity-btn-box button {
+  font-size: 16px;
+  padding: 4px 20px;
+  background: transparent;
+  border: 1px solid #000;
+  border-left: 0;
+  position: absolute;
+  top: 0;
+  left: 85px;
+}
+
+/* Product Description Section End */
+
+/*---------------------------------------------------------------------------- 
+  Elivate Zoom Section CSS End
+ ----------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------------- 
      21.0 Cart Table CSS Start
@@ -1828,7 +1932,6 @@ input:focus-visible {
   background: #d2d2d2;
 }
 
-
 .cart-buttons-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1889,7 +1992,7 @@ input:focus-visible {
   font-size: 30px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   margin-bottom: 5px;
 }
 
@@ -1903,7 +2006,7 @@ input:focus-visible {
 }
 
 .cart-product-total {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1913,7 +2016,7 @@ input:focus-visible {
 }
 
 .btn.cart-remover-btn {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1925,7 +2028,7 @@ input:focus-visible {
 
 /* Cart Sidebar */
 .cart-calculation {
-  background: #F5F5F5;
+  background: #f5f5f5;
   padding: 35px 20px;
 }
 
@@ -1950,7 +2053,7 @@ input:focus-visible {
 }
 
 .cal-right {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1959,7 +2062,7 @@ input:focus-visible {
 }
 
 .calculate-shipping {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   border: 0;
   padding: 0;
   font-weight: 700;
@@ -1981,14 +2084,14 @@ input:focus-visible {
 }
 
 .final-price {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 40px;
   text-align: right;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   margin: 30px 0;
 }
 
@@ -1996,28 +2099,23 @@ input:focus-visible {
   Cart Table CSS End
  ----------------------------------------------------------------------------*/
 
-
-
-
-
-
 /*---------------------------------------------------------------------------- 
   404 Section Start
  ----------------------------------------------------------------------------*/
 .error-title {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 55px;
   line-height: 65px;
   text-align: center;
   text-transform: capitalize;
-  color: #1E1E1E;
+  color: #1e1e1e;
   margin-bottom: 20px;
 }
 
 .error-text {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2034,9 +2132,6 @@ input:focus-visible {
 /*---------------------------------------------------------------------------- 
   404 Section End
  ----------------------------------------------------------------------------*/
-
-
-
 
 /*---------------------------------------------------------------------------- 
   Contact Us Section Start
@@ -2065,7 +2160,7 @@ input:focus-visible {
 }
 
 .scc-text h5 {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2097,8 +2192,6 @@ input:focus-visible {
 /*---------------------------------------------------------------------------- 
   Contact Us Section End
  ----------------------------------------------------------------------------*/
-
-
 
 /*---------------------------------------------------------------------------- 
   Blog Page Section Start
@@ -2134,8 +2227,6 @@ input:focus-visible {
   Blog Page Section End
  ----------------------------------------------------------------------------*/
 
-
-
 /*---------------------------------------------------------------------------- 
   Blog Sidebar Section Start
  ----------------------------------------------------------------------------*/
@@ -2159,7 +2250,7 @@ input:focus-visible {
   line-height: 25px;
   text-align: center;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   margin-bottom: 20px;
 }
 
@@ -2193,9 +2284,6 @@ input:focus-visible {
 
 /* About Author End */
 
-
-
-
 /* Recent Post Start */
 .rp-sm-img {
   width: 70px;
@@ -2217,12 +2305,12 @@ input:focus-visible {
   font-size: 20px;
   line-height: 25px;
   text-transform: capitalize;
-  color: #03221F;
+  color: #03221f;
   transition: 0.3s;
 }
 
 .rp-title:hover {
-  color: #C44E00;
+  color: #c44e00;
 }
 
 /* Recent Post End */
@@ -2253,8 +2341,6 @@ input:focus-visible {
   Blog Sidebar Section End
  ----------------------------------------------------------------------------*/
 
-
-
 /*---------------------------------------------------------------------------- 
   Blog Details Section Start
  ----------------------------------------------------------------------------*/
@@ -2268,7 +2354,7 @@ input:focus-visible {
 
 .blog-desc-quoted-box {
   padding: 30px;
-  background: #F8F8F8;
+  background: #f8f8f8;
   display: flex;
 }
 
@@ -2281,7 +2367,7 @@ input:focus-visible {
 }
 
 .bdq-text {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2338,12 +2424,15 @@ input:focus-visible {
   font-size: 14px;
 }
 
+.blog-detsils-page-area .single-home-blog:hover .home-blog-img img {
+  transform: scale(1);
+}
+
 /* Blog Share End */
 
 /*---------------------------------------------------------------------------- 
   Blog Details Section End
  ----------------------------------------------------------------------------*/
-
 
 /*---------------------------------------------------------------------------- 
      29.0 Comment Section CSS Start
@@ -2397,7 +2486,7 @@ input:focus-visible {
 .comment-box .read-more-btn {
   text-transform: capitalize;
   line-height: 32px;
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2414,15 +2503,8 @@ input:focus-visible {
     Comment Section CSS End
  ----------------------------------------------------------------------------*/
 
-
-
 /*---------------------------------------------------------------------------- 
   Post Comment Section Start
- ----------------------------------------------------------------------------*/
-
-
-/*---------------------------------------------------------------------------- 
-  Post Comment Section End
  ----------------------------------------------------------------------------*/
 .post-comment {
   padding: 50px 40px;
@@ -2430,7 +2512,7 @@ input:focus-visible {
 }
 
 .pc-title {
-  font-family: 'Darker Grotesque';
+  font-family: "Darker Grotesque";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -2451,10 +2533,408 @@ input:focus-visible {
 }
 
 /*---------------------------------------------------------------------------- 
-  Hero Section Start
+  Post Comment Section End
  ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+   Home Page 3 Start
+  ----------------------------------------------------------------------------*/
+/* Hero Section Start */
+.hero-3 .hero-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-3-wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.hero-3-content-box {
+  text-align: center;
+  min-width: 70%;
+}
+
+.hero-3-title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 95px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.play-span {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.play-btn {
+  color: #fff;
+}
+
+.play-btn:hover {
+  color: #fff;
+}
+
+/* Hero Section End */
+
+/* Services Section Start */
+.single-service {
+  text-align: center;
+  padding: 20px;
+}
+
+.service-icon {
+  margin-bottom: 20px;
+  width: 50px;
+}
+
+.service-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Services Section End */
+
+/* About Us Section Start */
+.about-us-img {
+  position: relative;
+  height: 550px;
+  width: 80%;
+  float: right;
+}
+
+.about-lg-img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-sm-img {
+  position: absolute;
+  left: -125px;
+  top: 50%;
+  width: 250px;
+  transform: translateY(-50%);
+}
+
+h2.about-title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 65px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+p.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.about-us-text span {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #FD8B5F;
+}
+
+.aui-bottom.about-us-img {
+  float: left;
+}
+
+.aui-bottom .about-sm-img {
+  left: unset;
+  right: -125px;
+}
+
+.about-collection li {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+/* About Us Section End */
+
+/* Video Play Section Start */
+.video-play-area {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3333;
+}
+
+.video-play-area::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #00000078;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Video Play Section End */
+
+/*---------------------------------------------------------------------------- 
+   Home Page 3 End
+  ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+   Home Page 2 Start
+  ----------------------------------------------------------------------------*/
+/* Product Category Section Start */
+.single-product-category {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.single-product-category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spc-content {
+  position: absolute;
+  content: '';
+  left: 20px;
+  bottom: 43px;
+}
+
+.spc-content a {
+  color: #fff;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.spc-content a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.spc-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.my-primary {
+  color: var(--primaryColor);
+}
+
+.sbg-1 {
+  background: #FAF8D6;
+}
+
+/* Product Category Section End */
+
+/* New Arrival Section Start */
+.new-arrival-box {
+  position: relative;
+  height: 305px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.new-arr-cont span {
+  display: inline-block;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.new-arr-cont h3 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+/* New Arrival Section End */
+
+/* Newsletter Section Start */
+.newsletter-email {
+  position: relative;
+}
+
+.newsletter-email input {
+  border: 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+p.msg-icon {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 5px;
+  font-size: 22px;
+}
+
+.newsletter-content h2 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 65px;
+  margin-bottom: 15px;
+}
+
+.newsletter-content p {
+  opacity: 0.8;
+}
+
+.newsletter-image-box {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.newsletter-image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-icon {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.newsletter-icon a{
+  color: #fff;
+}
+.newsletter-image-box:hover .newsletter-icon{
+  left: 0;
+}
+
+/* Newsletter Section End */
+/*---------------------------------------------------------------------------- 
+   Home Page 2 End
+  ----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/*  15. Product View Plugin CSS Start
+/*----------------------------------------*/
+.xzoom-thumbs {
+  position: relative;
+  float: left;
+}
+
+.xzoom-thumbs a {
+  display: block;
+}
+
+.xzoom-thumbs img {
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+  margin-left: 0 !important;
+}
+
+.xzoom-container img {
+  height: 469px;
+  width: 473px !important;
+  box-shadow: 0px 0px 5px 0px #ff8587;
+}
+
+.xactive {
+  -webkit-box-shadow: 0px 0px 3px 0px #ff8587;
+  -moz-box-shadow: 0px 0px 3px 0px #ff8587;
+  box-shadow: 0px 0px 3px 0px #ff8587;
+  border: 1px solid #ff8587;
+}
+
+/*----------------------------------------*/
+/*  Product View Plugin CSS End
+/*----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------------------------------------- 
-  Hero Section End
- ----------------------------------------------------------------------------*/
+   Hero Section Start
+  ----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- 
+   Hero Section End
+  ----------------------------------------------------------------------------*/
