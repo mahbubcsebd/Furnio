@@ -27,6 +27,23 @@
   });
 
 
+  // Sidebar
+  let sidebarOpen = document.getElementById('sidebar-open-btn');
+  let sidebarClose = document.getElementById('sidebar-close-btn');
+
+  sidebarOpen.addEventListener('click', function () {
+    document.getElementById("sidebar-box").style.cssText = `
+        right: -100%;
+    `
+  });
+
+  sidebarClose.addEventListener('click', function () {
+    document.getElementById("sidebar-box").style.cssText = `
+        right: -470px;
+    `
+  });
+
+
   /*---------------------
       AOS Animation
   ---------------------*/
@@ -521,5 +538,14 @@
       });
     }
   });
+
+  // product quantity
+  $("input[name='product_quantity_1']").TouchSpin({
+    verticalbuttons: true,
+    verticalupclass: 'glyphicon glyphicon-plus',
+    verticaldownclass: 'glyphicon glyphicon-minus'
+  });
+
+  $("input[name='demo3']").TouchSpin();
 
 }(jQuery));

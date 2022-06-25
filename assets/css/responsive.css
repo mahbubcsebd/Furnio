@@ -151,11 +151,6 @@
     height: 450px;
   }
 
-  .play-btn {
-    width: 60px;
-    height: 60px;
-  }
-
   .top-banner {
     height: 80vh;
   }
@@ -215,10 +210,9 @@
     font-size: 20px;
   }
 
-  .header-area .main-logo,
-  .footer-logo {
-    width: 180px;
-  }
+  .header-area .main-logo, .footer-logo {
+    width: 100px;
+}
 
   .single-speaker-top {
     width: 220px;
@@ -269,6 +263,21 @@
     max-height: 85vh;
     overflow: scroll;
   }
+
+  .nav-icon {
+    padding-top: 0;
+    padding: 6px;
+}
+
+  .header-area .navbar {
+    border-bottom: 0;
+}
+
+.nav-icon-collection li:after,
+.navbar-brand:after{
+  display: none;
+}
+
 
   .pricing-area-2 .single-pricing {
     box-shadow: none;
@@ -328,7 +337,7 @@
 
   .header-area {
     backdrop-filter: blur(5px) brightness(90%) saturate(75%);
-    background: var(--secondaryColor);
+    background: #fff;
   }
 
   .contact-card__icon {
@@ -508,9 +517,6 @@
     margin-bottom: 10px;
   }
 
-  .header-area {
-    padding: 5px 0;
-  }
 
   .blog-wrapper .shb-bottom {
     padding: 25px;
@@ -526,15 +532,33 @@
     height: 40px;
     line-height: 40px;
   }
+
+  .responsive-menu{
+    background: #efdada;
+  }
+
+  #sidebar-open-btn {
+    padding-right: 0;
+}
+
+  .responsive-menu .nav-icon-collection {
+    justify-content: right;
+}
+
+.header-area li.nav-item:after{
+  display: none;
+}
+
+.hero-right{
+    display: none;
+  }
+
+  .hero-left, .hero-right {
+    padding-top: 130px;
+}
 }
 
 @media screen and (max-width: 767px) {
-
-  .header-area .main-logo,
-  .footer-logo {
-    width: 160px;
-  }
-
   .banner-title h2 {
     font-size: 45px;
   }
@@ -673,6 +697,17 @@
   .sponsor-img-box {
     width: 250px;
   }
+
+  .home-about-img {
+    width: 300px;
+    height: 300px;
+}
+
+.about-title {
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
 
   .section-top-box {
     margin-bottom: 35px;
@@ -996,7 +1031,6 @@
   .copyright-text {
     padding: 20px 0;
   }
-
 
 
 }

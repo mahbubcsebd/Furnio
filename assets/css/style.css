@@ -84,6 +84,7 @@ body {
 body {
   font-size: 16px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 body,
@@ -204,6 +205,10 @@ td {
 img {
   border: none;
   max-width: 100%;
+}
+
+.mobile-show{
+  display: none;
 }
 
 .img-bg {
@@ -538,7 +543,7 @@ sup {
 }
 
 .navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {
-  border-color: rgba(255, 255, 255, 1);
+  border-color: var(--primaryColor);
 }
 
 .header-area .navbar-nav>.nav-item>.nav-link {
@@ -629,7 +634,7 @@ sup {
   width: 22px;
   display: block;
   height: 2px;
-  background-color: #fff;
+  background-color: #2E2E2A;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
@@ -703,22 +708,72 @@ sup {
   Navbar End
  ----------------------------------------------------------------------------*/
 
+ /*---------------------------------------------------------------------------- 
+  Main Sidebar Start
+ ----------------------------------------------------------------------------*/
+ .sidebar-box {
+  width: 470px;
+  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  transition: 1s;
+  z-index: 999999999;
+  overflow-y: auto;
+}
+
+ #sidebar-close-btn {
+  border: 1px solid #ddd;
+  background: #ddd;
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.main-sidebar-top {
+  padding: 30px 0;
+}
+
+.main-sidebar-top img {
+  margin-bottom: 10px;
+}
+
+.main-sidebar-top p {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #424242;
+}
+
+ /*---------------------------------------------------------------------------- 
+  Main Sidebar End
+ ----------------------------------------------------------------------------*/
+
 /*---------------------------------------------------------------------------- 
   Hero Section Start
  ----------------------------------------------------------------------------*/
-.hero-section {
-  height: 100vh;
-  background: #feffd8;
+ .hero-section {
+   height: auto;
+   background: #feffd8;
+   padding-bottom: 100px;
 }
 
-.hero-left,
-.hero-right {
+.hero-left, .hero-right {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -1433,6 +1488,63 @@ p.counter-right-text {
 /*---------------------------------------------------------------------------- 
   Shop Page Section Start
  ----------------------------------------------------------------------------*/
+/* Filter Start */
+.product-filter-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.filter-left {
+  display: flex;
+  align-items: center;
+}
+
+.filter-left p {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #424242;
+}
+
+.filter-btn {
+  border: 0;
+  background: transparent;
+  margin-right: 50px;
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #2E2E2A;
+}
+
+.filter-btn.btn i {
+    font-size: 16px;
+}
+
+.product-sort .form-group {
+  margin-bottom: 0;
+}
+
+.product-sorting {
+  padding: .375rem .75rem !important;
+  border: 0;
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #424242;
+}
+ /* Filter End */
+
+
 .single-sidebar {
   margin-bottom: 40px;
 }
@@ -2148,7 +2260,7 @@ h4.price {
 .single-contact-content {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .cu-top-wrapper {
@@ -2540,6 +2652,44 @@ h4.price {
    Home Page 3 Start
   ----------------------------------------------------------------------------*/
 /* Hero Section Start */
+/* hero 2 Start */
+.hero-area-2 {
+  height: 100vh;
+  background: var(--primaryColor);
+  position: relative;
+}
+
+.hero-2-img {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 80%;
+}
+
+.hero-2-title {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 95px;
+/* or 106% */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.hero-2-text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+/* hero 2 End */
 .hero-3 .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -2616,6 +2766,16 @@ h4.price {
   height: 550px;
   width: 80%;
   float: right;
+}
+
+.home-about-img {
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .about-lg-img {
@@ -2868,10 +3028,11 @@ p.msg-icon {
   transition: 0.3s;
 }
 
-.newsletter-icon a{
+.newsletter-icon a {
   color: #fff;
 }
-.newsletter-image-box:hover .newsletter-icon{
+
+.newsletter-image-box:hover .newsletter-icon {
   left: 0;
 }
 
@@ -2919,16 +3080,43 @@ p.msg-icon {
 /*----------------------------------------*/
 
 
+/* TOuchpin CSS Start */
+.input-group-btn-vertical .btn {
+  border-radius: 0;
+  background: transparent;
+  color: #000;
+  border-color: #000;
+}
 
+.product-quantity-box .btn {
+  background: transparent !important;
+  color: #4d4d4d !important;
+  border: 1px solid #ddd !important;
+  font-size: 30px !important;
+  padding: 12px 15px !important;
+}
 
+.product-quantity-box .form-control {
+  padding: 35px 20px;
+  font-size: 25px;
+}
 
+.product-quantity-box input {
+  width: 85px !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-color: #ddd !important;
+}
 
+.product-quantity-box .bootstrap-touchspin-down {
+  border-right: 0 !important;
+}
 
+.product-quantity-box .bootstrap-touchspin-up {
+  border-left: 0 !important;
+}
 
-
-
-
-
+/* TOuchpin CSS End */
 
 
 /*---------------------------------------------------------------------------- 

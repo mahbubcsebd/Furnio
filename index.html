@@ -33,8 +33,6 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- AOS Animation -->
-    <link rel="stylesheet" href="assets/css/aos.css">
     <!-- IntroLoader -->
     <link rel="stylesheet" href="assets/css/introLoader.min.css">
 
@@ -54,6 +52,19 @@
     <!-- Header Section Start -->
     <header id="header" class="header">
         <div class="header-area">
+            <div class="responsive-menu mobile-show">
+                <div class="container-fluid">
+                    <div class="navbar-icon-box">
+                        <ul class="nav-icon-collection">
+                            <li><button class="btn nav-icon"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                            <li><button class="btn nav-icon"><i class="fa-light fa-heart"></i></button></li>
+                            <li><button class="btn nav-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
+                            <li><button id="sidebar-open-btn" class="btn nav-icon"><i
+                                        class="fa-solid fa-bars"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="index.html">
@@ -95,12 +106,13 @@
                         </ul>
                     </div>
 
-                    <div class="navbar-icon-box">
+                    <div class="navbar-icon-box mobile-hide">
                         <ul class="nav-icon-collection">
                             <li><button class="btn nav-icon"><i class="fa-solid fa-magnifying-glass"></i></button></li>
                             <li><button class="btn nav-icon"><i class="fa-light fa-heart"></i></button></li>
                             <li><button class="btn nav-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
-                            <li><button class="btn nav-icon"><i class="fa-solid fa-bars"></i></button></li>
+                            <li><button id="sidebar-open-btn" class="btn nav-icon"><i
+                                        class="fa-solid fa-bars"></i></button></li>
                         </ul>
                     </div>
                 </nav>
@@ -109,12 +121,104 @@
     </header>
     <!-- Header Section End -->
 
+    <!-- Main Sidebar Section Start -->
+    <div class="sidebar-box" id="sidebar-box">
+        <button id="sidebar-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="main-sidebar-top">
+            <img src="assets/img/main-logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia quod deserunt corrupti omnis quasi
+                est labore necessitatibus mollitia consequuntur.</p>
+        </div>
+        <!-- Recent Post Start -->
+        <div class="blog-single-sidebar">
+            <div class="recent-post-wrapper mb-5">
+                <h3 class="sidebar-title mb-2">Recent Post</h3>
+                <hr class="hr-span">
+                <ul class="recent-post-collection">
+                    <li class="d-flex align-items-center mb-3">
+                        <img src="assets/img/blog-1.jpg" alt="" class="rp-sm-img mr-3">
+                        <div class="rp-text d-inline-block">
+                            <p class="rp-date">01 May 22</p>
+                            <a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+                                lectus tincidunt</a>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <img src="assets/img/blog-2.jpg" alt="" class="rp-sm-img mr-3">
+                        <div class="rp-text d-inline-block">
+                            <p class="rp-date">01 May 22</p>
+                            <a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+                                lectus tincidunt</a>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <img src="assets/img/blog-3.jpg" alt="" class="rp-sm-img mr-3">
+                        <div class="rp-text d-inline-block">
+                            <p class="rp-date">01 May 22</p>
+                            <a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+                                lectus tincidunt</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Recent Post End -->
+
+        <!-- Contact Start -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contact-content-wrapper">
+                    <h3 class="sidebar-title mb-2">Contact</h3>
+                    <hr class="hr-span">
+                    <div class="single-contact-content">
+                        <div class="scc-icon">
+                            <p><i class="fa-solid fa-location-dot"></i></p>
+                        </div>
+                        <div class="scc-text">
+                            <h5>Address</h5>
+                            <p>255 Sheet, New Land City, NY, USA</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-content">
+                        <div class="scc-icon">
+                            <p><i class="fa-solid fa-phone"></i></p>
+                        </div>
+                        <div class="scc-text">
+                            <h5>Phone</h5>
+                            <p>(00) 1234-567890 , (00) 9876-98543</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-content">
+                        <div class="scc-icon">
+                            <p><i class="fa-solid fa-envelope"></i></p>
+                        </div>
+                        <div class="scc-text">
+                            <h5>Web</h5>
+                            <p>info@yourmail.com</p>
+                        </div>
+                    </div>
+                    <div class="single-contact-content">
+                        <div class="scc-icon">
+                            <p><i class="fa-solid fa-clock"></i></p>
+                        </div>
+                        <div class="scc-text">
+                            <h5>Opining Hours</h5>
+                            <p>10 Am To 10 PM (Saturday - Friday)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact end -->
+    </div>
+    <!-- Main Sidebar Section End -->
+
     <!-- Hero Section Start -->
     <section id="hero" class="hero">
         <div class="hero-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="hero-left">
                             <h1 class="hero-title">Explore Minimal Design</h1>
                             <p class="hero-text">Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum.
@@ -124,7 +228,7 @@
                                     class="ml-2"><i class="fa-solid fa-arrow-right"></i></span></a>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <div class="hero-right">
                             <img src="assets/img/hero-img.png" alt="" class="hero-img">
                             <img src="assets/img/hero-sill.png" alt="" class="hero-sill">
@@ -272,6 +376,39 @@
         </div>
     </section>
     <!-- Latest Arival Section End -->
+
+    <!-- About Us Section Start -->
+    <section id="about-us" class="about-us spb-80">
+        <div class="about-us-area sbg sp-80">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="about-us-text">
+                            <span>What ‘s we provide</span>
+                            <h2 class="about-title">We Provide You The Best Experience</h2>
+                            <p class="about-text">Etiam erat velit scelerisque in. Tincidunt vitae semper quis lectus. A
+                                cras semper auctor neque vitae tempus quam pellentesque. In dictum non consectetur a
+                                erat.</p>
+                            <ul class="about-collection">
+                                <li><span><img class="mr-2" src="assets/img/provide-1.svg" alt=""></span> Minimalist
+                                    Design</li>
+                                <li><span><img class="mr-2" src="assets/img/provide-2.svg" alt=""></span> Natural
+                                    Product</li>
+                                <li><span><img class="mr-2" src="assets/img/provide-3.svg" alt=""></span> Best Quality
+                                    Wood</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="home-about-img">
+                            <img src="assets/img/about-lg-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
 
     <!-- Popular Item Section Start -->
     <section id="popular-item" class="popular-item spb-80">
@@ -777,8 +914,6 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- AOS Animation -->
-    <script src="assets/js/aos.js"></script>
     <!-- Owl Caousel -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Smart Menu -->

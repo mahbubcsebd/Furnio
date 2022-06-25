@@ -37,6 +37,8 @@
 	<link rel="stylesheet" href="assets/css/aos.css">
 	<!-- IntroLoader -->
 	<link rel="stylesheet" href="assets/css/introLoader.min.css">
+	<!-- Touchpin -->
+	<link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.css">
 	<!-- Verical Slider -->
 	<link rel="stylesheet" href="assets/css/carousel-vertical.min.css">
 	<!-- xZoom -->
@@ -104,7 +106,8 @@
 							<li><button class="btn nav-icon"><i class="fa-solid fa-magnifying-glass"></i></button></li>
 							<li><button class="btn nav-icon"><i class="fa-light fa-heart"></i></button></li>
 							<li><button class="btn nav-icon"><i class="fa-solid fa-bag-shopping"></i></button></li>
-							<li><button class="btn nav-icon"><i class="fa-solid fa-bars"></i></button></li>
+							<li><button id="sidebar-open-btn" class="btn nav-icon"><i
+								class="fa-solid fa-bars"></i></button></li>
 						</ul>
 					</div>
 				</nav>
@@ -112,6 +115,99 @@
 		</div>
 	</header>
 	<!-- Header Section End -->
+
+	    <!-- Main Sidebar Section Start -->
+		<div class="sidebar-box" id="sidebar-box">
+			<button id="sidebar-close-btn"><i class="fa-solid fa-xmark"></i></button>
+			<div class="main-sidebar-top">
+				<img src="assets/img/main-logo.png" alt="">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia quod deserunt corrupti omnis quasi
+					est labore necessitatibus mollitia consequuntur.</p>
+			</div>
+			<!-- Recent Post Start -->
+			<div class="blog-single-sidebar">
+				<div class="recent-post-wrapper mb-5">
+					<h3 class="sidebar-title mb-2">Recent Post</h3>
+					<hr class="hr-span">
+					<ul class="recent-post-collection">
+						<li class="d-flex align-items-center mb-3">
+							<img src="assets/img/blog-1.jpg" alt="" class="rp-sm-img mr-3">
+							<div class="rp-text d-inline-block">
+								<p class="rp-date">01 May 22</p>
+								<a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+									lectus tincidunt</a>
+							</div>
+						</li>
+						<li class="d-flex align-items-center mb-3">
+							<img src="assets/img/blog-2.jpg" alt="" class="rp-sm-img mr-3">
+							<div class="rp-text d-inline-block">
+								<p class="rp-date">01 May 22</p>
+								<a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+									lectus tincidunt</a>
+							</div>
+						</li>
+						<li class="d-flex align-items-center mb-3">
+							<img src="assets/img/blog-3.jpg" alt="" class="rp-sm-img mr-3">
+							<div class="rp-text d-inline-block">
+								<p class="rp-date">01 May 22</p>
+								<a href="blog-details.html" class="rp-title">Tincidunt vitae sempr quis
+									lectus tincidunt</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Recent Post End -->
+	
+			<!-- Contact Start -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="contact-content-wrapper">
+						<h3 class="sidebar-title mb-2">Contact</h3>
+						<hr class="hr-span">
+						<div class="single-contact-content">
+							<div class="scc-icon">
+								<p><i class="fa-solid fa-location-dot"></i></p>
+							</div>
+							<div class="scc-text">
+								<h5>Address</h5>
+								<p>255 Sheet, New Land City, NY, USA</p>
+							</div>
+						</div>
+						<div class="single-contact-content">
+							<div class="scc-icon">
+								<p><i class="fa-solid fa-phone"></i></p>
+							</div>
+							<div class="scc-text">
+								<h5>Phone</h5>
+								<p>(00) 1234-567890 , (00) 9876-98543</p>
+							</div>
+						</div>
+						<div class="single-contact-content">
+							<div class="scc-icon">
+								<p><i class="fa-solid fa-envelope"></i></p>
+							</div>
+							<div class="scc-text">
+								<h5>Web</h5>
+								<p>info@yourmail.com</p>
+							</div>
+						</div>
+						<div class="single-contact-content">
+							<div class="scc-icon">
+								<p><i class="fa-solid fa-clock"></i></p>
+							</div>
+							<div class="scc-text">
+								<h5>Opining Hours</h5>
+								<p>10 Am To 10 PM (Saturday - Friday)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Contact end -->
+		</div>
+	
+		<!-- Main Sidebar Section End -->
 
 	<!-- Top Banner Section Start -->
 	<div class="top-banner" style="background-image: url('assets/img/page-banner.jpg');">
@@ -210,18 +306,12 @@
 
 							<div class="shop-inner-quantity-box">
 								<!-- Increment-Decrement Start -->
-								<div class="quantity-wrapper">
-									<div class="product-quantity">
-										<input id="product-quantity-input" class="product-quantity-input input-number"
-											type="number" min="1" max="100" value="1">
-										<div class="quantity-btn-box">
-											<button class="input-number-increment"><i
-													class="fa-solid fa-plus"></i></button>
-											<button class="input-number-decrement"><i
-													class="fa-solid fa-minus"></i></button>
-										</div>
-									</div>
+								<div class="product-quantity-box-2">
+									<input id="product_quantity_1" type="text" value="1" name="product_quantity_1">
 								</div>
+								<!-- <div class="product-quantity-box">
+									<input id="demo3" type="text" value="1" name="demo3">
+								</div> -->
 								<!-- Increment-Decrement End -->
 								<a href="#" class="btn btn-custo btn-custom-primary rounded">Add to Cart</a>
 							</div>
@@ -407,6 +497,8 @@
 	<script src="assets/js/jquery.introLoader.min.js"></script>
 	<!-- xZoom -->
 	<script src="assets/js/xzoom.min.js"></script>
+	<!-- Touchpin -->
+	<script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
 	<!-- Main Script -->
 	<script src="assets/js/main.js"></script>
 </body>
